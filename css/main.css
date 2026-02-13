@@ -1,45 +1,54 @@
 ﻿body {
-    margin: 0;
-    font-family: var(--font-main);
-    background-color: var(--color-bg);
-    color: var(--color-text);
+    color: #d6d6d6; /* Text color */
+    background-color: #161616;
 }
 
-.site-header {
-    padding: 1.5rem;
+/* unvisited link */
+a:link {
+    color: #d6d6d6;
 }
 
-.nav {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* visited link */
+a:visited {
+    color: #d6d6d6;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+/* mouse over link */
+a:hover {
+    color: #ebebeb;
 }
 
-.nav-links a {
-    color: var(--color-text);
-    text-decoration: none;
+/* selected link */
+a:active {
+    color: #bfbfbf;
 }
 
-.hero {
-    max-width: var(--max-width);
-    margin: 5rem auto;
-    padding: 0 1.5rem;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.25rem;
-    background: var(--color-accent);
-    color: #000;
-    text-decoration: none;
+.project-butt {
+    padding: 20px;
+    background-color: #161616;
+    color: #d6d6d6;
     border-radius: 6px;
+
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    outline-color: #d6d6d6;
+    outline-style: solid;
+
+    display:block;
+    text-decoration: none;
+}
+
+.container{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.intro {
+    text-align: center;
+}
+
+/* Example of class */
+.icon{
+    background-color: blueviolet;
 }
