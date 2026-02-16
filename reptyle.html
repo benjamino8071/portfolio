@@ -22,29 +22,89 @@
 <ul>
     <li>Unity</li>
     <li>C#</li>
-    <li>Meta Quest 3</li>
+    <li>Meta Quest</li>
     <li>Perforce</li>
     <li>Miro</li>
 </ul>
 
 <h2>Overview</h2>
 
-<p>An online multiplayer VR game
+<p>
+    An online multiplayer VR game
     where players capture and ride dinosaurs over a dynamic landscape.
     Inspired by 'playground-style' games like <i>Gorilla Tag</i> and <i>Animal Company</i>.
 </p>
 
-<img src="imgs/reptyle/bownarrow.png" alt="Bow n Arrow" style="width:33%">
+<img src="imgs/reptyle/bownarrow.png" alt="Bow n Arrow" style="width:33%;height:auto;">
 
-<h2>Contributions</h2>
+<h2>Key Contributions</h2>
 
 <h3>Online Connectivity</h3>
 
+<p>
+    Used Unity Gaming Services to establish online connections
+    and voice chat communication between players.
+</p>
+
+<p>
+    Through remote procedure calls we used a custom command system to
+    share object data over a network. This gave us more control over physics and state handling.
+</p>
+
+<h3>UI</h3>
+
+<p>
+    Created a modular system for 'touch' and 'spatial' UI.
+
+</p>
+
+<p>
+    Used experience gained from GravThrow about the importance of building atomic objects
+    and layout components to easily modify panels.
+</p>
+
+<p>INSERT TOUCH (terminal) AND SPATIAL UI IMAGES HERE</p>
+
 <h3>Items</h3>
 
-<h3>Dino Capture</h3>
+<p>
+    Developed the system for creating, destroying, and handling in-game items.
+</p>
+
+<p>
+    Two items in the game, the bow and arrow, were fundamental to interacting with the world.
+    Players could fire 'capture' arrows at dinosaurs to transform them into an egg.
+</p>
 
 <h3>Dino Riding</h3>
+
+<p>
+    Contributed to iterative development of the riding mechanic.
+</p>
+
+<p>
+    In an attempt to simulate riding on 'dinoback', we initially decided to use the relative distance of the
+    player's hands from their avatar to determine the speed and rotation of the dinosaur.
+</p>
+
+<p>
+    While working on this mechanic we kept running into compromises between comfort and control;
+    we realised that player rotation had to (for the most part) be independent of dinosaur rotation to avoid a nauseating parallax effect.
+    This, however, meant choosing which z-axis to use when measuring the player's arm extensions: do we use the player's, or the dinosaur's?
+</p>
+
+<p>
+    To add, we also noticed the player had to make a constant trade-off between speed and rotation.
+</p>
+
+<p>
+    We eventually found a suitable solution, with the thumbstick used for speed and the arm extension for rotation.
+</p>
+
+<p>
+    Overall this was a challenging task for the team,
+    requiring clear communication with the designers and in-game tools to modify parameters at runtime.
+</p>
 
 </body>
 </html>
