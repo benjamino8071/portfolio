@@ -25,13 +25,13 @@ a:active {
 
 .project-butt {
     padding: 20px;
+
+
     background-color: #161616;
     color: #d6d6d6;
     border-radius: 6px;
 
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
     outline-color: #d6d6d6;
     outline-style: solid;
 
@@ -42,13 +42,38 @@ a:active {
 .container{
     padding-left: 200px;
     padding-right: 200px;
+    padding-top: 30px;
 }
 
 .intro {
     text-align: center;
 }
 
-/* Example of class */
-.icon{
-    background-color: blueviolet;
+.column {
+    float: inline-start;
+    width: 32%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.little-pad {
+    padding: 10px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.screenshot{
+    width: 160px;
+    height: 90px;
 }
