@@ -1,6 +1,7 @@
 ﻿body {
     color: #d6d6d6; /* Text color */
     background-color: #161616;
+    padding-bottom: 70px;
 }
 
 /* unvisited link */
@@ -39,9 +40,9 @@ a:active {
     text-decoration: none;
 }
 
-.container{
-    padding-left: 200px;
-    padding-right: 200px;
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
     padding-top: 30px;
 }
 
@@ -66,14 +67,36 @@ a:active {
     padding: 10px;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-    .column {
-        width: 100%;
-    }
-}
-
 .screenshot{
     width: 160px;
     height: 90px;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: #121212;
+    backdrop-filter: blur(6px);
+
+    padding: 18px 20px;
+    text-align: center;
+
+    border-top: 1px solid #2a2a2a;
+}
+
+.top-bar{
+    padding-top: 4px;
+    padding-bottom: 10px;
+
+    background-color: #121212;
+    color: #d6d6d6;
+
+    text-align: center;
+
+    display:block;
+    text-decoration: none;
+
 }
