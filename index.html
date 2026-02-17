@@ -6,7 +6,6 @@
     <title>Ben Conway | Portfolio</title>
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
 </head>
 
 <body>
@@ -14,63 +13,6 @@
 <div class="top-bar">
     <p>- \ | / -</p>
 </div>
-
-<script>
-    function setFont(fontClass) {
-        document.body.classList.remove("font-sans", "font-serif", "font-mono");
-        document.body.classList.add(fontClass);
-
-        localStorage.setItem("font", fontClass);
-    }
-
-    window.onload = function() {
-        const fontTypeSaved = localStorage.getItem("font");
-        if (fontTypeSaved) setFont(fontTypeSaved);
-    };
-
-    const slider = document.getElementById('fontSizeSlider');
-    const display = document.getElementById('fontSizeValue');
-
-    // Update font size
-    slider.addEventListener('input', () => {
-        const size = slider.value + 'px';
-        document.documentElement.style.setProperty('--font-size', size);
-        display.textContent = size;
-        localStorage.setItem('fontSize', slider.value);
-    });
-
-    // Load saved font size
-    window.addEventListener('load', () => {
-        const saved = localStorage.getItem('fontSize');
-        if (saved) {
-            slider.value = saved;
-            const size = saved + 'px';
-            document.documentElement.style.setProperty('--font-size', size);
-            display.textContent = size;
-        }
-    });
-</script>
-
-<div class="font-controls">
-    <button onclick="setFont('font-sans')">Sans</button>
-    <button onclick="setFont('font-serif')">Serif</button>
-    <button onclick="setFont('font-mono')">Mono</button>
-</div>
-
-<div class="font-size-control">
-    <label for="fontSizeSlider">Font Size:</label>
-    <div class="slider-wrapper">
-        <input
-                type="range"
-                id="fontSizeSlider"
-                min="12"
-                max="26"
-                value="16"
-        >
-        <span id="fontSizeValue">16px</span>
-    </div>
-</div>
-
 
 <div class="intro">
     <p>HELLO WORLDS. Please explore my curation of professional, university and hobbyist projects.

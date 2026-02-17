@@ -1,4 +1,11 @@
-﻿
+﻿body{
+    color: #d6d6d6; /* Text color */
+    background-color: #161616;
+    padding-bottom: 70px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
 /* unvisited link */
 a:link {
     color: #d6d6d6;
